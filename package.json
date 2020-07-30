@@ -1,0 +1,24 @@
+{
+  "name": "firebase-github-backup",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koj-co/firebase-github-backup.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/koj-co/firebase-github-backup/issues"
+  },
+  "homepage": "https://github.com/koj-co/firebase-github-backup#readme",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "firebase-admin": "^9.0.0"
+  }
+}
