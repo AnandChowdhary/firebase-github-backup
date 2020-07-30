@@ -14,7 +14,14 @@ import {
   Decipher,
 } from "crypto";
 import recursiveReaddir from "recursive-readdir";
-import {} from "fs-extra";
+import {
+  mkdir,
+  writeJson,
+  createWriteStream,
+  createReadStream,
+  unlink,
+  rename,
+} from "fs-extra";
 import archiver from "archiver";
 
 config();
@@ -40,13 +47,13 @@ initializeApp({
 
 const encryptDecryptFile = (cipher: Cipher | Decipher, path: string) =>
   new Promise((resolve, reject) => {
-    const input = fs.createReadStream(path);
-    const output = fs.createWriteStream(`${path}.temp`);
+    const input = createReadStream(path);
+    const output = createWriteStream(`${path}.temp`);
     input.pipe(cipher).pipe(output);
     output.on("finish", () => {
-      fs.unlink(path, (error) => {
+      unlink(path, (error) => {
         if (error) return reject(error);
-        fs.rename(`${path}.temp`, path, (error) => {
+        rename(`${path}.temp`, path, (error) => {
           if (error) return reject(error);
           return resolve();
         });
@@ -61,7 +68,7 @@ const encryptDecryptFile = (cipher: Cipher | Decipher, path: string) =>
  */
 const zipDirectory = (source: string, out: string) => {
   const archive = archiver("zip", { zlib: { level: 9 } });
-  const stream = fs.createWriteStream(out);
+  const stream = createWriteStream(out);
   return new Promise((resolve, reject) => {
     archive
       .directory(source, false)
@@ -84,14 +91,12 @@ export const encrypt = async () => {
 
 export const backup = async () => {
   console.log("Starting backup...");
-  await fs.promises.mkdir(join(".", BACKUPS_DIRECTORY), { recursive: true });
+  await mkdir(join(".", BACKUPS_DIRECTORY));
   const collections = await firestore().listCollections();
   for await (const details of collections) {
     const id = details.id;
     console.log("Backing up", id);
-    await fs.promises.mkdir(join(".", BACKUPS_DIRECTORY, id), {
-      recursive: true,
-    });
+    await mkdir(join(".", BACKUPS_DIRECTORY, id));
     const documents: Array<firestore.QueryDocumentSnapshot<
       firestore.DocumentData
     >> = [];
@@ -99,9 +104,9 @@ export const backup = async () => {
     _documents.forEach((doc) => documents.push(doc));
     for await (const document of documents) {
       console.log(`> ${document.id}`);
-      await fs.promises.writeFile(
+      await writeJson(
         join(".", BACKUPS_DIRECTORY, id, `${document.id}.json`),
-        JSON.stringify(document.data())
+        document.data()
       );
     }
     console.log("Completed backing up", id);
