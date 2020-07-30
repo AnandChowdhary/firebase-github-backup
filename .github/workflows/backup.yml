@@ -1,0 +1,33 @@
+name: Backup CI
+on:
+  schedule:
+    - cron: "7 7 * * 4"
+  repository_dispatch:
+    types: [backup]
+  push:
+    branches:
+      - master
+jobs:
+  backup:
+    name: Backup
+    runs-on: ubuntu-18.04
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+      - name: Backup
+        run: npm run run
+        env:
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
+          FIREBASE_DATABASE_URL: ${{ secrets.FIREBASE_DATABASE_URL }}
+      - name: Commit new data
+        uses: stefanzweifel/git-auto-commit-action@v4.1.1
+        with:
+          commit_message: ":card_file_box: Add backup [skip ci]"
+          commit_user_name: Koj Bot
+          commit_user_email: bot@koj.co
+          commit_author: Koj Bot <bot@koj.co>
