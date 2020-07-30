@@ -136,4 +136,10 @@ export const backup = async () => {
   console.log("Done!");
 };
 
-decrypt();
+if (process.argv[2] === "decrypt") {
+  decrypt();
+} else if (process.argv[2] === "encrypt") {
+  encrypt();
+} else {
+  backup();
+}
