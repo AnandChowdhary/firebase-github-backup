@@ -14,6 +14,7 @@ import {
   Cipher,
   Decipher,
 } from "crypto";
+import recursiveReaddir from "recursive-readdir";
 
 config();
 
