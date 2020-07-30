@@ -21,6 +21,8 @@ import {
   unlink,
   rename,
   ensureDir,
+  remove,
+  readdir,
 } from "fs-extra";
 import archiver from "archiver";
 
@@ -47,7 +49,6 @@ initializeApp({
 
 const encryptDecryptFile = (cipher: Cipher | Decipher, path: string) =>
   new Promise((resolve, reject) => {
-    console.log("Encrypting file...");
     const input = createReadStream(path);
     const output = createWriteStream(`${path}.temp`);
     input.pipe(cipher).pipe(output);
@@ -56,7 +57,6 @@ const encryptDecryptFile = (cipher: Cipher | Decipher, path: string) =>
         if (error) return reject(error);
         rename(`${path}.temp`, path, (error) => {
           if (error) return reject(error);
-          console.log("Encrypted");
           return resolve();
         });
       });
@@ -90,14 +90,31 @@ export const encrypt = async () => {
   return encryptDecryptFile(cipher, file);
 };
 
+export const decrypt = async () => {
+  await ensureDir(join(".", BACKUPS_DIRECTORY));
+  readdir(join(".", BACKUPS_DIRECTORY), async (error, files) => {
+    if (error) throw error;
+    for await (const file of files) {
+      console.log("Decrypting", file);
+      const decipher = createDecipheriv(
+        "aes-256-cbc",
+        KEY,
+        INITIALIZATION_VECTOR
+      );
+      encryptDecryptFile(decipher, join(".", BACKUPS_DIRECTORY, file));
+      console.log("Done!");
+    }
+  });
+};
+
 export const backup = async () => {
   console.log("Starting backup...");
-  await mkdir(join(".", BACKUPS_DIRECTORY));
+  await mkdir(join(".", "temp"));
   const collections = await firestore().listCollections();
   for await (const details of collections) {
     const id = details.id;
     console.log("Backing up", id);
-    await mkdir(join(".", BACKUPS_DIRECTORY, id));
+    await mkdir(join(".", "temp", id));
     const documents: Array<firestore.QueryDocumentSnapshot<
       firestore.DocumentData
     >> = [];
@@ -106,14 +123,17 @@ export const backup = async () => {
     for await (const document of documents) {
       console.log(`> ${document.id}`);
       await writeJson(
-        join(".", BACKUPS_DIRECTORY, id, `${document.id}.json`),
+        join(".", "temp", id, `${document.id}.json`),
         document.data()
       );
     }
     console.log("Completed backing up", id);
   }
-  console.log("Encryping files...");
+  console.log("Encrypting...");
+  await encrypt();
+  console.log("Encrypted");
+  await remove(join(".", "temp"));
   console.log("Done!");
 };
 
-encrypt();
+decrypt();
