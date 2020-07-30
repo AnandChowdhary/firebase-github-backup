@@ -53,25 +53,49 @@ const encryptDecryptFile = (cipher: Cipher | Decipher, path: string) =>
     });
   });
 
-const encryptDecryptAll = async (
-  type: "encrypt" | "decrypt",
-  cipher: Cipher | Decipher
-) => {
-  //await encryptDecryptFile(cipher, "backups/example.txt");
+const encryptDecryptAll = async (cipher: Cipher | Decipher) => {
+  const files = await recursiveReaddir(join(".", BACKUPS_DIRECTORY));
+  for await (const file of files) {
+    await encryptDecryptFile(cipher, file);
+  }
 };
 
 export const encrypt = () => {
   const cipher = createCipheriv("aes-256-cbc", KEY, INITIALIZATION_VECTOR);
-  return encryptDecryptAll("encrypt", cipher);
+  return encryptDecryptAll(cipher);
 };
 
 export const decrypt = () => {
   const decipher = createDecipheriv("aes-256-cbc", KEY, INITIALIZATION_VECTOR);
-  return encryptDecryptAll("decrypt", decipher);
+  return encryptDecryptAll(decipher);
 };
 
 export const backup = async () => {
+  console.log("Starting backup...");
   await fs.promises.mkdir(join(".", BACKUPS_DIRECTORY), { recursive: true });
+  const collections = await firestore().listCollections();
+  for await (const details of collections) {
+    const id = details.id;
+    console.log("Backing up", id);
+    await fs.promises.mkdir(join(".", BACKUPS_DIRECTORY, id), {
+      recursive: true,
+    });
+    const documents: Array<firestore.QueryDocumentSnapshot<
+      firestore.DocumentData
+    >> = [];
+    const _documents = await firestore().collection(id).get();
+    _documents.forEach((doc) => documents.push(doc));
+    for await (const document of documents) {
+      console.log(`> ${document.id}`);
+      await fs.promises.writeFile(
+        join(".", BACKUPS_DIRECTORY, id, `${document.id}.json`),
+        JSON.stringify(document.data())
+      );
+    }
+    console.log("Completed backing up", id);
+  }
+  console.log("Encryping files...");
+  console.log("Done!");
 };
 
-encrypt();
+backup();
