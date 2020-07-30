@@ -13,7 +13,6 @@ import {
   Cipher,
   Decipher,
 } from "crypto";
-import recursiveReaddir from "recursive-readdir";
 import {
   mkdir,
   writeJson,
