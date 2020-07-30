@@ -10,6 +10,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "run": "ts-node index.ts",
+    "decrypt": "ts-node index.ts decrypt",
     "build": "tsc",
     "start": "node dist/index.js",
     "semantic-release": "semantic-release"
