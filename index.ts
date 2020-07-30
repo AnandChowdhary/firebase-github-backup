@@ -1,5 +1,4 @@
 import { config } from "dotenv";
-import fs from "fs";
 import { join } from "path";
 import {
   initializeApp,
@@ -15,6 +14,7 @@ import {
   Decipher,
 } from "crypto";
 import recursiveReaddir from "recursive-readdir";
+import {} from "fs-extra";
 import archiver from "archiver";
 
 config();
