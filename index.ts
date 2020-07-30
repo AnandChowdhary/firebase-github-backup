@@ -21,6 +21,7 @@ import {
   createReadStream,
   unlink,
   rename,
+  ensureDir,
 } from "fs-extra";
 import archiver from "archiver";
 
@@ -47,6 +48,7 @@ initializeApp({
 
 const encryptDecryptFile = (cipher: Cipher | Decipher, path: string) =>
   new Promise((resolve, reject) => {
+    console.log("Encrypting file...");
     const input = createReadStream(path);
     const output = createWriteStream(`${path}.temp`);
     input.pipe(cipher).pipe(output);
@@ -55,6 +57,7 @@ const encryptDecryptFile = (cipher: Cipher | Decipher, path: string) =>
         if (error) return reject(error);
         rename(`${path}.temp`, path, (error) => {
           if (error) return reject(error);
+          console.log("Encrypted");
           return resolve();
         });
       });
@@ -81,12 +84,11 @@ const zipDirectory = (source: string, out: string) => {
 };
 
 export const encrypt = async () => {
-  await zipDirectory(
-    join(".", "temp"),
-    join(".", BACKUPS_DIRECTORY, `${new Date().toISOString()}.zip`)
-  );
-  // const cipher = createCipheriv("aes-256-cbc", KEY, INITIALIZATION_VECTOR);
-  // return encryptDecryptAll(cipher);
+  await ensureDir(join(".", BACKUPS_DIRECTORY));
+  const file = join(".", BACKUPS_DIRECTORY, `${new Date().toISOString()}.zip`);
+  await zipDirectory(join(".", "temp"), file);
+  const cipher = createCipheriv("aes-256-cbc", KEY, INITIALIZATION_VECTOR);
+  return encryptDecryptFile(cipher, file);
 };
 
 export const backup = async () => {
