@@ -15,6 +15,7 @@ import {
   Decipher,
 } from "crypto";
 import recursiveReaddir from "recursive-readdir";
+import archiver from "archiver";
 
 config();
 
@@ -53,21 +54,32 @@ const encryptDecryptFile = (cipher: Cipher | Decipher, path: string) =>
     });
   });
 
-const encryptDecryptAll = async (cipher: Cipher | Decipher) => {
-  const files = await recursiveReaddir(join(".", BACKUPS_DIRECTORY));
-  for await (const file of files) {
-    await encryptDecryptFile(cipher, file);
-  }
+/**
+ * @param {String} source
+ * @param {String} out
+ * @source https://stackoverflow.com/a/51518100/1656944
+ */
+const zipDirectory = (source: string, out: string) => {
+  const archive = archiver("zip", { zlib: { level: 9 } });
+  const stream = fs.createWriteStream(out);
+  return new Promise((resolve, reject) => {
+    archive
+      .directory(source, false)
+      .on("error", (err) => reject(err))
+      .pipe(stream);
+
+    stream.on("close", () => resolve());
+    archive.finalize();
+  });
 };
 
-export const encrypt = () => {
-  const cipher = createCipheriv("aes-256-cbc", KEY, INITIALIZATION_VECTOR);
-  return encryptDecryptAll(cipher);
-};
-
-export const decrypt = () => {
-  const decipher = createDecipheriv("aes-256-cbc", KEY, INITIALIZATION_VECTOR);
-  return encryptDecryptAll(decipher);
+export const encrypt = async () => {
+  await zipDirectory(
+    join(".", "temp"),
+    join(".", BACKUPS_DIRECTORY, `${new Date().toISOString()}.zip`)
+  );
+  // const cipher = createCipheriv("aes-256-cbc", KEY, INITIALIZATION_VECTOR);
+  // return encryptDecryptAll(cipher);
 };
 
 export const backup = async () => {
@@ -98,4 +110,4 @@ export const backup = async () => {
   console.log("Done!");
 };
 
-backup();
+encrypt();
