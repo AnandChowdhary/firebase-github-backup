@@ -46,13 +46,13 @@ npm run build && npm run start
 
 ## 📄 License
 
-- Code: [MIT](./LICENSE) © [Koj](https://joinkoj.com)
+- Code: [MIT](./LICENSE) © [Koj](https://koj.co)
 - "Firebase" is a trademark of Google LLC
 - "GitHub" is a trademark of GitHub, Inc.
 
 <p align="center">
   <a href="https://koj.co">
-    <img width="44" alt="Koj" src="https://kojcdn.com/v1593890002/website-v2/logo_mcxuwq.svg">
+    <img width="44" alt="Koj" src="https://kojcdn.com/v1598284251/website-v2/koj-github-footer_m089ze.svg">
   </a>
 </p>
 <p align="center">
