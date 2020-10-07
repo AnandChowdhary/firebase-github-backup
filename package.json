@@ -8,7 +8,7 @@
     "dist"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 0",
     "run": "npx ts-node index.ts",
     "decrypt": "npx ts-node index.ts decrypt",
     "build": "tsc",
