@@ -3,6 +3,7 @@ sources:
 allowed:
   - apache-2.0
   - bsd-2-clause
+  - 0bsd
   - bsd-3-clause
   - isc
   - mit
@@ -28,3 +29,16 @@ reviewed:
     - typedarray
     - websocket-driver
     - websocket-extensions
+    - bl
+    - lodash.isinteger
+    - lodash.isnumber
+    - lodash.isplainobject
+    - lodash.isstring
+    - lodash.once
+    - lodash.union
+    - node-forge
+    - protobufjs
+    - readable-stream-2.3.7
+    - readable-stream-3.6.0
+    - string_decoder
+    - tslib
