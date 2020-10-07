@@ -1,6 +1,6 @@
 ---
 name: google-gax
-version: 2.7.0
+version: 2.9.0
 type: npm
 summary: Google API Extensions
 homepage: https://github.com/googleapis/gax-nodejs#readme

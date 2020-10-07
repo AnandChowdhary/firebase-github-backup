@@ -1,6 +1,6 @@
 ---
 name: teeny-request
-version: 7.0.0
+version: 7.0.1
 type: npm
 summary: Like request, but smaller.
 homepage: https://github.com/googleapis/teeny-request#readme

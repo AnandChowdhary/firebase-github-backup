@@ -1,6 +1,6 @@
 ---
 name: gtoken
-version: 5.0.3
+version: 5.0.4
 type: npm
 summary: Node.js Google Authentication Service Account Tokens
 homepage: https://github.com/google/node-gtoken#readme

@@ -1,6 +1,6 @@
 ---
 name: "@google-cloud/paginator"
-version: 3.0.3
+version: 3.0.5
 type: npm
 summary: A result paging utility used by Google node.js modules
 homepage: https://github.com/googleapis/nodejs-paginator#readme

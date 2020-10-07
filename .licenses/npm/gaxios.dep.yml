@@ -1,6 +1,6 @@
 ---
 name: gaxios
-version: 3.0.4
+version: 3.2.0
 type: npm
 summary: A simple common HTTP client specifically for Google APIs and services.
 homepage: https://github.com/googleapis/gaxios#readme

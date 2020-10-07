@@ -1,6 +1,6 @@
 ---
 name: google-p12-pem
-version: 3.0.2
+version: 3.0.3
 type: npm
 summary: Convert Google .p12 keys to .pem keys.
 homepage: https://github.com/google/google-p12-pem#readme

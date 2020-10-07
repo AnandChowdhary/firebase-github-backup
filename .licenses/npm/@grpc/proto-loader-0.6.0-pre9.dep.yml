@@ -1,14 +1,13 @@
 ---
-name: "@google-cloud/common"
-version: 3.4.1
+name: "@grpc/proto-loader"
+version: 0.6.0-pre9
 type: npm
-summary: Common components for Cloud APIs Node.js Client Libraries
-homepage: https://github.com/googleapis/nodejs-common#readme
+summary: gRPC utility library for loading .proto files
+homepage: https://grpc.io/
 license: apache-2.0
 licenses:
 - sources: LICENSE
   text: |2
-
                                      Apache License
                                Version 2.0, January 2004
                             http://www.apache.org/licenses/
@@ -189,7 +188,7 @@ licenses:
        APPENDIX: How to apply the Apache License to your work.
 
           To apply the Apache License to your work, attach the following
-          boilerplate notice, with the fields enclosed by brackets "[]"
+          boilerplate notice, with the fields enclosed by brackets "{}"
           replaced with your own identifying information. (Don't include
           the brackets!)  The text should be enclosed in the appropriate
           comment syntax for the file format. We also recommend that a
@@ -197,7 +196,7 @@ licenses:
           same "printed page" as the copyright notice for easier
           identification within third-party archives.
 
-       Copyright [yyyy] [name of copyright owner]
+       Copyright {yyyy} {name of copyright owner}
 
        Licensed under the Apache License, Version 2.0 (the "License");
        you may not use this file except in compliance with the License.
@@ -210,17 +209,4 @@ licenses:
        WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
        See the License for the specific language governing permissions and
        limitations under the License.
-- sources: README.md
-  text: |-
-    Apache Version 2.0
-
-    See [LICENSE](https://github.com/googleapis/nodejs-common/blob/master/LICENSE)
-
-    [client-docs]: https://googleapis.dev/nodejs/common/latest
-
-    [shell_img]: https://gstatic.com/cloudssh/images/open-btn.png
-    [projects]: https://console.cloud.google.com/project
-    [billing]: https://support.google.com/cloud/answer/6293499#enable-billing
-
-    [auth]: https://cloud.google.com/docs/authentication/getting-started
 notices: []

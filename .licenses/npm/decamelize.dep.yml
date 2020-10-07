@@ -1,18 +1,17 @@
 ---
-name: tar-stream
-version: 2.1.4
+name: decamelize
+version: 1.2.0
 type: npm
-summary: tar-stream is a streaming tar parser and generator and nothing else. It is
-  streams2 and operates purely using streams which means you can easily extract/parse
-  tarballs without ever hitting the file system.
-homepage: https://github.com/mafintosh/tar-stream
+summary: 'Convert a camelized string into a lowercased one with a custom separator:
+  unicornRainbow → unicorn_rainbow'
+homepage: https://github.com/sindresorhus/decamelize#readme
 license: mit
 licenses:
-- sources: LICENSE
-  text: |-
+- sources: license
+  text: |
     The MIT License (MIT)
 
-    Copyright (c) 2014 Mathias Buus
+    Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this software and associated documentation files (the "Software"), to deal
@@ -31,6 +30,6 @@ licenses:
     LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
     THE SOFTWARE.
-- sources: README.md
-  text: MIT
+- sources: readme.md
+  text: MIT © [Sindre Sorhus](https://sindresorhus.com)
 notices: []

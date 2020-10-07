@@ -1,6 +1,6 @@
 ---
 name: hash-stream-validation
-version: 0.2.3
+version: 0.2.4
 type: npm
 summary: Hash a stream of data, then validate
 homepage: https://github.com/stephenplusplus/hash-stream-validation#readme
