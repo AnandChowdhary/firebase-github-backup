@@ -37,6 +37,7 @@
     "fs-extra": "^9.0.1"
   },
   "devDependencies": {
+    "@koj/config": "^1.2.5",
     "@semantic-release/git": "^9.0.0",
     "@types/archiver": "^3.1.0",
     "@types/fs-extra": "^9.0.1",
