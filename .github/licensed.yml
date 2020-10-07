@@ -41,3 +41,4 @@ reviewed:
     - readable-stream
     - string_decoder
     - tslib
+    - color-convert
