@@ -4,9 +4,6 @@ on:
     - cron: "7 7 * * 4"
   repository_dispatch:
     types: [backup]
-  push:
-    branches:
-      - master
 jobs:
   backup:
     name: Backup
