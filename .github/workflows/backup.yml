@@ -29,3 +29,6 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4.5.1
         with:
           commit_message: ":card_file_box: Add backup [skip ci]"
+          commit_user_name: KojBot
+          commit_user_email: bot@koj.co
+          commit_author: KojBot <bot@koj.co>
