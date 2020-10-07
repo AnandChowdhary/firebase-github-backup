@@ -38,7 +38,6 @@ reviewed:
     - lodash.union
     - node-forge
     - protobufjs
-    - readable-stream-2.3.7
-    - readable-stream-3.6.0
+    - readable-stream
     - string_decoder
     - tslib
