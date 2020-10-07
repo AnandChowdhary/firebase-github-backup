@@ -10,3 +10,21 @@ allowed:
   - unlicense
 reviewed:
   npm:
+    - faye-websocket
+    - fs.realpath
+    - glob
+    - google-gax
+    - hash-stream-validation
+    - http-parser-js
+    - ieee754
+    - lodash.at
+    - lodash.camelcase
+    - lodash.defaults
+    - lodash.difference
+    - lodash.flatten
+    - lodash.has
+    - lodash.includes
+    - lodash.isboolean
+    - typedarray
+    - websocket-driver
+    - websocket-extensions
