@@ -1,6 +1,6 @@
 ---
 name: firebase-admin
-version: 9.2.0
+version: 9.3.0
 type: npm
 summary: Firebase admin SDK for Node.js
 homepage: https://firebase.google.com/
