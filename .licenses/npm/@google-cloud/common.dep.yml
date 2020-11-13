@@ -1,6 +1,6 @@
 ---
 name: "@google-cloud/common"
-version: 3.4.1
+version: 3.5.0
 type: npm
 summary: Common components for Cloud APIs Node.js Client Libraries
 homepage: https://github.com/googleapis/nodejs-common#readme

@@ -1,13 +1,14 @@
 ---
-name: firebase-admin
-version: 9.4.0
+name: gaxios
+version: 4.0.1
 type: npm
-summary: Firebase admin SDK for Node.js
-homepage: https://firebase.google.com/
+summary: A simple common HTTP client specifically for Google APIs and services.
+homepage: https://github.com/googleapis/gaxios#readme
 license: apache-2.0
 licenses:
 - sources: LICENSE
   text: |2
+
                                      Apache License
                                Version 2.0, January 2004
                             http://www.apache.org/licenses/
@@ -210,10 +211,5 @@ licenses:
        See the License for the specific language governing permissions and
        limitations under the License.
 - sources: README.md
-  text: |-
-    Firebase Admin Node.js SDK is licensed under the
-    [Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
-
-    Your use of Firebase is governed by the
-    [Terms of Service for Firebase Services](https://firebase.google.com/terms/).
+  text: "[Apache-2.0](https://github.com/googleapis/gaxios/blob/master/LICENSE)"
 notices: []

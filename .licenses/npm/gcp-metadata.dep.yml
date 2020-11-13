@@ -1,6 +1,6 @@
 ---
 name: gcp-metadata
-version: 4.2.0
+version: 4.2.1
 type: npm
 summary: Get the metadata from a Google Cloud Platform environment
 homepage: https://github.com/googleapis/gcp-metadata#readme
