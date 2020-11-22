@@ -1,18 +1,7 @@
 import { config } from "dotenv";
 import { join } from "path";
-import {
-  initializeApp,
-  credential,
-  ServiceAccount,
-  firestore,
-} from "firebase-admin";
-import {
-  createHash,
-  createCipheriv,
-  createDecipheriv,
-  Cipher,
-  Decipher,
-} from "crypto";
+import { initializeApp, credential, ServiceAccount, firestore } from "firebase-admin";
+import { createHash, createCipheriv, createDecipheriv, Cipher, Decipher } from "crypto";
 import {
   mkdir,
   writeJson,
@@ -47,7 +36,7 @@ initializeApp({
   databaseURL: FIREBASE_DATABASE_URL,
 });
 
-const encryptDecryptFile = (cipher: Cipher | Decipher, path: string) =>
+const encryptDecryptFile = (cipher: Cipher | Decipher, path: string): Promise<void> =>
   new Promise((resolve, reject) => {
     const input = createReadStream(path);
     const output = createWriteStream(`${path}.temp`);
@@ -68,7 +57,7 @@ const encryptDecryptFile = (cipher: Cipher | Decipher, path: string) =>
  * @param {String} out
  * @source https://stackoverflow.com/a/51518100/1656944
  */
-const zipDirectory = (source: string, out: string) => {
+const zipDirectory = (source: string, out: string): Promise<void> => {
   const archive = archiver("zip", { zlib: { level: 9 } });
   const stream = createWriteStream(out);
   return new Promise((resolve, reject) => {
@@ -96,11 +85,7 @@ export const decrypt = async () => {
     if (error) throw error;
     for await (const file of files) {
       console.log("Decrypting", file);
-      const decipher = createDecipheriv(
-        "aes-256-cbc",
-        KEY,
-        INITIALIZATION_VECTOR
-      );
+      const decipher = createDecipheriv("aes-256-cbc", KEY, INITIALIZATION_VECTOR);
       encryptDecryptFile(decipher, join(".", BACKUPS_DIRECTORY, file));
       console.log("Done!");
     }
@@ -115,17 +100,12 @@ export const backup = async () => {
     const id = details.id;
     console.log("Backing up", id);
     await mkdir(join(".", "temp", id));
-    const documents: Array<firestore.QueryDocumentSnapshot<
-      firestore.DocumentData
-    >> = [];
+    const documents: Array<firestore.QueryDocumentSnapshot<firestore.DocumentData>> = [];
     const _documents = await firestore().collection(id).get();
     _documents.forEach((doc) => documents.push(doc));
     for await (const document of documents) {
       console.log(`> ${document.id}`);
-      await writeJson(
-        join(".", "temp", id, `${document.id}.json`),
-        document.data()
-      );
+      await writeJson(join(".", "temp", id, `${document.id}.json`), document.data());
     }
     console.log("Completed backing up", id);
   }
