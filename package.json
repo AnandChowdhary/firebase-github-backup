@@ -1,6 +1,6 @@
 {
   "name": "firebase-github-backup",
-  "version": "0.0.0",
+  "version": "1.0.1",
   "description": "Make automated encrypted backups of your Firebase database in a GitHub repo",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
