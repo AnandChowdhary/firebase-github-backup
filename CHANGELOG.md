@@ -1,3 +1,10 @@
+## [v1.0.2](https://github.com/koj-co/firebase-github-backup/compare/v1.0.1...v1.0.2) (2020-11-30)
+
+### ⬆️ Dependency updates
+
+- [`09593f5`](https://github.com/koj-co/firebase-github-backup/commit/09593f5)  Bump semantic-release from 17.2.4 to 17.3.0
+- [`6c7fc12`](https://github.com/koj-co/firebase-github-backup/commit/6c7fc12)  Bump @types/node from 14.14.9 to 14.14.10
+
 ## [v1.0.1](https://github.com/koj-co/firebase-github-backup/compare/v1.0.0...v1.0.1) (2020-11-23)
 
 ### ⬆️ Dependency updates
