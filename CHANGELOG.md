@@ -1,3 +1,12 @@
+## v1.0.3 (2020-12-07)
+
+[📝 Release notes](https://github.com/koj-co/firebase-github-backup/releases/tag/v1.0.3) · [💻 Compare](https://github.com/koj-co/firebase-github-backup/compare/v1.0.2...v1.0.3) · [🔖 Tag](https://github.com/koj-co/firebase-github-backup/tree/v1.0.3) · 🗄️ Archive ([zip](https://github.com/koj-co/firebase-github-backup/archive/v1.0.3.zip) · [tar.gz](https://github.com/koj-co/firebase-github-backup/archive/v1.0.3.tar.gz))
+
+### ⬆️ Dependency updates
+
+- [`f034b0a`](https://github.com/koj-co/firebase-github-backup/commit/f034b0a)  Bump @koj/config from 1.2.9 to 1.2.11
+- [`f605b91`](https://github.com/koj-co/firebase-github-backup/commit/f605b91)  Bump ts-node from 9.0.0 to 9.1.0
+
 ## [v1.0.2](https://github.com/koj-co/firebase-github-backup/compare/v1.0.1...v1.0.2) (2020-11-30)
 
 ### ⬆️ Dependency updates
