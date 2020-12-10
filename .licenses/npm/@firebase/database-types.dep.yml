@@ -1,6 +1,6 @@
 ---
 name: "@firebase/database-types"
-version: 0.5.2
+version: 0.6.1
 type: npm
 summary: "@firebase/database Types"
 homepage: https://github.com/firebase/firebase-js-sdk#readme

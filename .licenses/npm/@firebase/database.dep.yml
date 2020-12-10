@@ -1,6 +1,6 @@
 ---
 name: "@firebase/database"
-version: 0.6.13
+version: 0.8.1
 type: npm
 summary: This is the Firebase Realtime Database component of the Firebase JS SDK.
 homepage: https://github.com/firebase/firebase-js-sdk#readme

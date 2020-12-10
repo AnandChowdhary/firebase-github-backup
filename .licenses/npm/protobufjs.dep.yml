@@ -1,9 +1,9 @@
 ---
 name: protobufjs
-version: 6.10.1
+version: 6.10.2
 type: npm
 summary: Protocol Buffers for JavaScript (& TypeScript).
-homepage: http://dcode.io/protobuf.js
+homepage: https://protobufjs.github.io/protobuf.js/
 license: other
 licenses:
 - sources: LICENSE

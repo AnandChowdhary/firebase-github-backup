@@ -1,6 +1,6 @@
 ---
 name: "@google-cloud/firestore"
-version: 4.7.1
+version: 4.8.0
 type: npm
 summary: Firestore Client Library for Node.js
 homepage: https://github.com/googleapis/nodejs-firestore#readme
