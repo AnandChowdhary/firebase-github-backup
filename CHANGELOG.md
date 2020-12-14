@@ -1,3 +1,16 @@
+## v1.0.4 (2020-12-14)
+
+[📝 Release notes](https://github.com/koj-co/firebase-github-backup/releases/tag/v1.0.4) · [💻 Compare](https://github.com/koj-co/firebase-github-backup/compare/v1.0.3...v1.0.4) · [🔖 Tag](https://github.com/koj-co/firebase-github-backup/tree/v1.0.4) · 🗄️ Archive ([zip](https://github.com/koj-co/firebase-github-backup/archive/v1.0.4.zip) · [tar.gz](https://github.com/koj-co/firebase-github-backup/archive/v1.0.4.tar.gz))
+
+### ⬆️ Dependency updates
+
+- [`d15b65c`](https://github.com/koj-co/firebase-github-backup/commit/d15b65c)  Bump ts-node from 9.1.0 to 9.1.1
+- [`011607e`](https://github.com/koj-co/firebase-github-backup/commit/011607e)  Bump @types/node from 14.14.10 to 14.14.11
+- [`0f46510`](https://github.com/koj-co/firebase-github-backup/commit/0f46510)  Bump firebase-admin from 9.4.1 to 9.4.2
+- [`5eb38c7`](https://github.com/koj-co/firebase-github-backup/commit/5eb38c7)  Bump @types/fs-extra from 9.0.4 to 9.0.5
+- [`044e22a`](https://github.com/koj-co/firebase-github-backup/commit/044e22a)  Bump @types/node from 14.14.11 to 14.14.12
+- [`0ad1c4b`](https://github.com/koj-co/firebase-github-backup/commit/0ad1c4b)  Bump actions/setup-node from v2.1.2 to v2.1.3
+
 ## v1.0.3 (2020-12-07)
 
 [📝 Release notes](https://github.com/koj-co/firebase-github-backup/releases/tag/v1.0.3) · [💻 Compare](https://github.com/koj-co/firebase-github-backup/compare/v1.0.2...v1.0.3) · [🔖 Tag](https://github.com/koj-co/firebase-github-backup/tree/v1.0.3) · 🗄️ Archive ([zip](https://github.com/koj-co/firebase-github-backup/archive/v1.0.3.zip) · [tar.gz](https://github.com/koj-co/firebase-github-backup/archive/v1.0.3.tar.gz))
