@@ -1,3 +1,15 @@
+## v1.0.5 (2020-12-21)
+
+[📝 Release notes](https://github.com/koj-co/firebase-github-backup/releases/tag/v1.0.5) · [💻 Compare](https://github.com/koj-co/firebase-github-backup/compare/v1.0.4...v1.0.5) · [🔖 Tag](https://github.com/koj-co/firebase-github-backup/tree/v1.0.5) · 🗄️ Archive ([zip](https://github.com/koj-co/firebase-github-backup/archive/v1.0.5.zip) · [tar.gz](https://github.com/koj-co/firebase-github-backup/archive/v1.0.5.tar.gz))
+
+### ⬆️ Dependency updates
+
+- [`4c00c2a`](https://github.com/koj-co/firebase-github-backup/commit/4c00c2a)  Bump typescript from 4.1.2 to 4.1.3
+- [`20a0a19`](https://github.com/koj-co/firebase-github-backup/commit/20a0a19)  Bump @types/node from 14.14.12 to 14.14.13
+- [`58ea98c`](https://github.com/koj-co/firebase-github-backup/commit/58ea98c)  Bump @types/node from 14.14.13 to 14.14.14
+- [`babd030`](https://github.com/koj-co/firebase-github-backup/commit/babd030)  Bump stefanzweifel/git-auto-commit-action
+- [`c586630`](https://github.com/koj-co/firebase-github-backup/commit/c586630)  Bump actions/setup-node from v2.1.3 to v2.1.4
+
 ## v1.0.4 (2020-12-14)
 
 [📝 Release notes](https://github.com/koj-co/firebase-github-backup/releases/tag/v1.0.4) · [💻 Compare](https://github.com/koj-co/firebase-github-backup/compare/v1.0.3...v1.0.4) · [🔖 Tag](https://github.com/koj-co/firebase-github-backup/tree/v1.0.4) · 🗄️ Archive ([zip](https://github.com/koj-co/firebase-github-backup/archive/v1.0.4.zip) · [tar.gz](https://github.com/koj-co/firebase-github-backup/archive/v1.0.4.tar.gz))
