@@ -1,3 +1,14 @@
+## v1.0.6 (2020-12-28)
+
+[📝 Release notes](https://github.com/koj-co/firebase-github-backup/releases/tag/v1.0.6) · [💻 Compare](https://github.com/koj-co/firebase-github-backup/compare/v1.0.5...v1.0.6) · [🔖 Tag](https://github.com/koj-co/firebase-github-backup/tree/v1.0.6) · 🗄️ Archive ([zip](https://github.com/koj-co/firebase-github-backup/archive/v1.0.6.zip) · [tar.gz](https://github.com/koj-co/firebase-github-backup/archive/v1.0.6.tar.gz))
+
+### ⬆️ Dependency updates
+
+- [`ada669d`](https://github.com/koj-co/firebase-github-backup/commit/ada669d)  Bump vsoch/pull-request-action from 1.0.12 to 1.0.13
+- [`25ce9a9`](https://github.com/koj-co/firebase-github-backup/commit/25ce9a9)  Bump pascalgn/automerge-action from v0.12.0 to v0.13.0
+- [`c4761cc`](https://github.com/koj-co/firebase-github-backup/commit/c4761cc)  Bump @types/node from 14.14.14 to 14.14.16
+- [`5be0c38`](https://github.com/koj-co/firebase-github-backup/commit/5be0c38)  Bump @types/fs-extra from 9.0.5 to 9.0.6
+
 ## v1.0.5 (2020-12-21)
 
 [📝 Release notes](https://github.com/koj-co/firebase-github-backup/releases/tag/v1.0.5) · [💻 Compare](https://github.com/koj-co/firebase-github-backup/compare/v1.0.4...v1.0.5) · [🔖 Tag](https://github.com/koj-co/firebase-github-backup/tree/v1.0.5) · 🗄️ Archive ([zip](https://github.com/koj-co/firebase-github-backup/archive/v1.0.5.zip) · [tar.gz](https://github.com/koj-co/firebase-github-backup/archive/v1.0.5.tar.gz))
