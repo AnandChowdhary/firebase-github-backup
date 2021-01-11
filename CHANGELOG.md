@@ -1,3 +1,14 @@
+## v1.0.8 (2021-01-11)
+
+[📝 Release notes](https://github.com/koj-co/firebase-github-backup/releases/tag/v1.0.8) · [💻 Compare](https://github.com/koj-co/firebase-github-backup/compare/v1.0.7...v1.0.8) · [🔖 Tag](https://github.com/koj-co/firebase-github-backup/tree/v1.0.8) · 🗄️ Archive ([zip](https://github.com/koj-co/firebase-github-backup/archive/v1.0.8.zip) · [tar.gz](https://github.com/koj-co/firebase-github-backup/archive/v1.0.8.tar.gz))
+
+### ⬆️ Dependency updates
+
+- [`e0ad09d`](https://github.com/koj-co/firebase-github-backup/commit/e0ad09d)  Bump @types/archiver from 3.1.1 to 5.1.0
+- [`cd5bdfd`](https://github.com/koj-co/firebase-github-backup/commit/cd5bdfd)  Bump @types/node from 14.14.17 to 14.14.19
+- [`25bb3eb`](https://github.com/koj-co/firebase-github-backup/commit/25bb3eb)  Bump @types/node from 14.14.19 to 14.14.20
+- [`dbfa096`](https://github.com/koj-co/firebase-github-backup/commit/dbfa096)  Bump archiver from 5.1.0 to 5.2.0
+
 ## v1.0.7 (2021-01-04)
 
 [📝 Release notes](https://github.com/koj-co/firebase-github-backup/releases/tag/v1.0.7) · [💻 Compare](https://github.com/koj-co/firebase-github-backup/compare/v1.0.6...v1.0.7) · [🔖 Tag](https://github.com/koj-co/firebase-github-backup/tree/v1.0.7) · 🗄️ Archive ([zip](https://github.com/koj-co/firebase-github-backup/archive/v1.0.7.zip) · [tar.gz](https://github.com/koj-co/firebase-github-backup/archive/v1.0.7.tar.gz))
