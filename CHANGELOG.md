@@ -1,3 +1,11 @@
+## v1.0.11 (2021-02-01)
+
+[📝 Release notes](https://github.com/koj-co/firebase-github-backup/releases/tag/v1.0.11) · [💻 Compare](https://github.com/koj-co/firebase-github-backup/compare/v1.0.10...v1.0.11) · [🔖 Tag](https://github.com/koj-co/firebase-github-backup/tree/v1.0.11) · 🗄️ Archive ([zip](https://github.com/koj-co/firebase-github-backup/archive/v1.0.11.zip) · [tar.gz](https://github.com/koj-co/firebase-github-backup/archive/v1.0.11.tar.gz))
+
+### ⬆️ Dependency updates
+
+- [`9246043`](https://github.com/koj-co/firebase-github-backup/commit/9246043)  Bump semantic-release from 17.3.6 to 17.3.7
+
 ## v1.0.10 (2021-01-25)
 
 [📝 Release notes](https://github.com/koj-co/firebase-github-backup/releases/tag/v1.0.10) · [💻 Compare](https://github.com/koj-co/firebase-github-backup/compare/v1.0.9...v1.0.10) · [🔖 Tag](https://github.com/koj-co/firebase-github-backup/tree/v1.0.10) · 🗄️ Archive ([zip](https://github.com/koj-co/firebase-github-backup/archive/v1.0.10.zip) · [tar.gz](https://github.com/koj-co/firebase-github-backup/archive/v1.0.10.tar.gz))
