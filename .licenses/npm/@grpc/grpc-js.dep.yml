@@ -1,6 +1,6 @@
 ---
 name: "@grpc/grpc-js"
-version: 1.1.8
+version: 1.2.6
 type: npm
 summary: gRPC Library for Node - pure JS implementation
 homepage: https://grpc.io/

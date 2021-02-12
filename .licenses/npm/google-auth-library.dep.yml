@@ -1,6 +1,6 @@
 ---
 name: google-auth-library
-version: 6.1.3
+version: 6.1.6
 type: npm
 summary: Google APIs Authentication Client Library for Node.js
 homepage: https://github.com/googleapis/google-auth-library-nodejs#readme
@@ -212,24 +212,15 @@ licenses:
        limitations under the License.
 - sources: README.md
   text: |-
-    This library is licensed under Apache 2.0. Full license text is available in [LICENSE][copying].
+    Apache Version 2.0
 
-    [Application Default Credentials]: https://cloud.google.com/docs/authentication/getting-started
-    [apptype]: https://user-images.githubusercontent.com/534619/36553844-3f9a863c-17b2-11e8-904a-29f6cd5f807a.png
-    [authdocs]: https://developers.google.com/accounts/docs/OAuth2Login
-    [bugs]: https://github.com/googleapis/google-auth-library-nodejs/issues
-    [codecov-image]: https://codecov.io/gh/googleapis/google-auth-library-nodejs/branch/master/graph/badge.svg
-    [codecov-url]: https://codecov.io/gh/googleapis/google-auth-library-nodejs
-    [contributing]: https://github.com/googleapis/google-auth-library-nodejs/blob/master/CONTRIBUTING.md
-    [copying]: https://github.com/googleapis/google-auth-library-nodejs/tree/master/LICENSE
-    [david-dm-img]: https://david-dm.org/googleapis/google-auth-library-nodejs/status.svg
-    [david-dm]: https://david-dm.org/googleapis/google-auth-library-nodejs
-    [node]: http://nodejs.org/
-    [npmimg]: https://img.shields.io/npm/v/google-auth-library.svg
-    [npm]: https://www.npmjs.org/package/google-auth-library
-    [oauth]: https://developers.google.com/identity/protocols/OAuth2
-    [snyk-image]: https://snyk.io/test/github/googleapis/google-auth-library-nodejs/badge.svg
-    [snyk-url]: https://snyk.io/test/github/googleapis/google-auth-library-nodejs
-    [stackoverflow]: http://stackoverflow.com/questions/tagged/google-auth-library-nodejs
-    [devconsole]: https://console.cloud.google.com/
+    See [LICENSE](https://github.com/googleapis/google-auth-library-nodejs/blob/master/LICENSE)
+
+    [client-docs]: https://googleapis.dev/nodejs/google-auth-library/latest
+    [product-docs]: https://cloud.google.com/docs/authentication/
+    [shell_img]: https://gstatic.com/cloudssh/images/open-btn.png
+    [projects]: https://console.cloud.google.com/project
+    [billing]: https://support.google.com/cloud/answer/6293499#enable-billing
+
+    [auth]: https://cloud.google.com/docs/authentication/getting-started
 notices: []

@@ -1,6 +1,6 @@
 ---
 name: http-parser-js
-version: 0.5.2
+version: 0.5.3
 type: npm
 summary: A pure JS HTTP parser for node.
 homepage: https://github.com/creationix/http-parser-js#readme
