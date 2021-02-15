@@ -1,3 +1,16 @@
+## v1.0.13 (2021-02-15)
+
+[📝 Release notes](https://github.com/koj-co/firebase-github-backup/releases/tag/v1.0.13) · [💻 Compare](https://github.com/koj-co/firebase-github-backup/compare/v1.0.12...v1.0.13) · [🔖 Tag](https://github.com/koj-co/firebase-github-backup/tree/v1.0.13) · 🗄️ Archive ([zip](https://github.com/koj-co/firebase-github-backup/archive/v1.0.13.zip) · [tar.gz](https://github.com/koj-co/firebase-github-backup/archive/v1.0.13.tar.gz))
+
+### ⬆️ Dependency updates
+
+- [`4077aab`](https://github.com/koj-co/firebase-github-backup/commit/4077aab)  Bump semantic-release from 17.3.7 to 17.3.8
+- [`7942de3`](https://github.com/koj-co/firebase-github-backup/commit/7942de3)  Bump typescript from 4.1.3 to 4.1.4
+- [`a4a0dde`](https://github.com/koj-co/firebase-github-backup/commit/a4a0dde)  Bump firebase-admin from 9.4.2 to 9.5.0
+- [`afb17b8`](https://github.com/koj-co/firebase-github-backup/commit/afb17b8)  Bump typescript from 4.1.4 to 4.1.5
+- [`bafd46f`](https://github.com/koj-co/firebase-github-backup/commit/bafd46f)  Bump @types/fs-extra from 9.0.6 to 9.0.7
+- [`c435853`](https://github.com/koj-co/firebase-github-backup/commit/c435853)  Bump @types/node from 14.14.25 to 14.14.26
+
 ## v1.0.12 (2021-02-08)
 
 [📝 Release notes](https://github.com/koj-co/firebase-github-backup/releases/tag/v1.0.12) · [💻 Compare](https://github.com/koj-co/firebase-github-backup/compare/v1.0.11...v1.0.12) · [🔖 Tag](https://github.com/koj-co/firebase-github-backup/tree/v1.0.12) · 🗄️ Archive ([zip](https://github.com/koj-co/firebase-github-backup/archive/v1.0.12.zip) · [tar.gz](https://github.com/koj-co/firebase-github-backup/archive/v1.0.12.tar.gz))
