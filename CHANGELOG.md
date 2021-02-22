@@ -1,3 +1,16 @@
+## v1.0.14 (2021-02-22)
+
+[📝 Release notes](https://github.com/koj-co/firebase-github-backup/releases/tag/v1.0.14) · [💻 Compare](https://github.com/koj-co/firebase-github-backup/compare/v1.0.13...v1.0.14) · [🔖 Tag](https://github.com/koj-co/firebase-github-backup/tree/v1.0.14) · 🗄️ Archive ([zip](https://github.com/koj-co/firebase-github-backup/archive/v1.0.14.zip) · [tar.gz](https://github.com/koj-co/firebase-github-backup/archive/v1.0.14.tar.gz))
+
+### ⬆️ Dependency updates
+
+- [`5ca913d`](https://github.com/koj-co/firebase-github-backup/commit/5ca913d)  Bump vsoch/pull-request-action from 1.0.13 to 1.0.14
+- [`3c3f07b`](https://github.com/koj-co/firebase-github-backup/commit/3c3f07b)  Bump pascalgn/automerge-action from v0.13.0 to v0.13.1
+- [`4be23ea`](https://github.com/koj-co/firebase-github-backup/commit/4be23ea)  Bump @types/node from 14.14.26 to 14.14.28
+- [`3ef784c`](https://github.com/koj-co/firebase-github-backup/commit/3ef784c)  Bump semantic-release from 17.3.8 to 17.3.9
+- [`400fcff`](https://github.com/koj-co/firebase-github-backup/commit/400fcff)  Bump vsoch/pull-request-action from 1.0.14 to 1.0.15
+- [`688054a`](https://github.com/koj-co/firebase-github-backup/commit/688054a)  Bump @types/node from 14.14.28 to 14.14.30
+
 ## v1.0.13 (2021-02-15)
 
 [📝 Release notes](https://github.com/koj-co/firebase-github-backup/releases/tag/v1.0.13) · [💻 Compare](https://github.com/koj-co/firebase-github-backup/compare/v1.0.12...v1.0.13) · [🔖 Tag](https://github.com/koj-co/firebase-github-backup/tree/v1.0.13) · 🗄️ Archive ([zip](https://github.com/koj-co/firebase-github-backup/archive/v1.0.13.zip) · [tar.gz](https://github.com/koj-co/firebase-github-backup/archive/v1.0.13.tar.gz))
