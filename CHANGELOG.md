@@ -1,3 +1,16 @@
+## v1.0.15 (2021-03-01)
+
+[📝 Release notes](https://github.com/koj-co/firebase-github-backup/releases/tag/v1.0.15) · [💻 Compare](https://github.com/koj-co/firebase-github-backup/compare/v1.0.14...v1.0.15) · [🔖 Tag](https://github.com/koj-co/firebase-github-backup/tree/v1.0.15) · 🗄️ Archive ([zip](https://github.com/koj-co/firebase-github-backup/archive/v1.0.15.zip) · [tar.gz](https://github.com/koj-co/firebase-github-backup/archive/v1.0.15.tar.gz))
+
+### ⬆️ Dependency updates
+
+- [`86f4e4f`](https://github.com/koj-co/firebase-github-backup/commit/86f4e4f)  Bump stefanzweifel/git-auto-commit-action
+- [`6c25945`](https://github.com/koj-co/firebase-github-backup/commit/6c25945)  Bump @types/node from 14.14.30 to 14.14.31
+- [`03c9c99`](https://github.com/koj-co/firebase-github-backup/commit/03c9c99)  Bump actions/setup-node from v2.1.4 to v2.1.5
+- [`6c00bab`](https://github.com/koj-co/firebase-github-backup/commit/6c00bab)  Bump stefanzweifel/git-auto-commit-action
+- [`6cda371`](https://github.com/koj-co/firebase-github-backup/commit/6cda371)  Bump typescript from 4.1.5 to 4.2.2
+- [`f6c421e`](https://github.com/koj-co/firebase-github-backup/commit/f6c421e)  Bump semantic-release from 17.3.9 to 17.4.0
+
 ## v1.0.14 (2021-02-22)
 
 [📝 Release notes](https://github.com/koj-co/firebase-github-backup/releases/tag/v1.0.14) · [💻 Compare](https://github.com/koj-co/firebase-github-backup/compare/v1.0.13...v1.0.14) · [🔖 Tag](https://github.com/koj-co/firebase-github-backup/tree/v1.0.14) · 🗄️ Archive ([zip](https://github.com/koj-co/firebase-github-backup/archive/v1.0.14.zip) · [tar.gz](https://github.com/koj-co/firebase-github-backup/archive/v1.0.14.tar.gz))
